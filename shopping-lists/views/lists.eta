@@ -1,0 +1,19 @@
+<h1>Shopping lists</h1>
+
+<h2>Create a list</h2>
+
+<form method="POST" action="/lists">
+  Name: <input type="text" name="name" />
+  <input type="submit" value="Create list!" />
+</form>
+
+<h2>Active list </h2>
+
+<ul>
+<% it.lists.forEach((list) => { %>
+  //TODO: change li to specific list link
+  <li><%= list.name %></li>
+  //TODO: create a form to deactivate list
+
+<% }); %>
+</ul>
