@@ -2,7 +2,7 @@ import { serve } from "./deps.js";
 import { configure  } from "./deps.js";
 import * as listController from "./controllers/listController.js";
 import * as itemController from "./controllers/itemController.js";
-import * as requestUtils from "./utils/requestUtils.js"
+import * as requestUtils from "./utils/requestsUtils.js"
 
 
 configure({
