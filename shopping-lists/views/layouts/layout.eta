@@ -1,10 +1,15 @@
-import postgres from "https://deno.land/x/postgresjs@v3.3.3/mod.js";
-
-let sql;
-if (Deno.env.get("DATABASE_URL")) {
-  sql = postgres(Deno.env.get("DATABASE_URL"));
-} else {
-  sql = postgres({});
-}
-
-export { sql };
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Task application!</title>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.1/dist/paper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container paper">
+      <%~ it.body %>
+    </div>
+  </body>
+</html>
