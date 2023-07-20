@@ -8,7 +8,7 @@ const create = async (name) => {
 };
 
 const findActiveList = async () => {
-    const result = await executeQuery("SELECT * FROM shopping_list WHERE active = TRUE" );
+    const result = await executeQuery("SELECT * FROM shopping_list WHERE active = TRUE" ,{});
     return result.rows;
 }
 
