@@ -1,6 +1,6 @@
 import { renderFile } from "../deps.js"
 import * as listService from "../services/listService.js";
-import {redirectTo} from "../utils/requestsUtils";
+import {redirectTo} from "../utils/requestsUtils.js";
 
 const responseDetails = {
     headers: { "Content-Type": "text/html;charset=UTF-8" },

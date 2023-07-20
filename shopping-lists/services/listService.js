@@ -1,5 +1,5 @@
 import { executeQuery} from "../database/database.js";
-import {redirectTo} from "../utils/requestsUtils";
+import {redirectTo} from "../utils/requestsUtils.js";
 
 //TODO:Change to execute Query
 const create = async (name) => {
