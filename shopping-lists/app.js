@@ -11,7 +11,6 @@ configure({
 
 const handleRequest = async (request) => {
   const url = new URL(request.url);
-
   if (url.pathname === "/" && request.method === "GET") {
     requestUtils.redirectTo("/lists")
   } else if (url.pathname === "/lists" && request.method === "POST") {
@@ -24,4 +23,5 @@ const handleRequest = async (request) => {
     return new Response("Not found", { status: 404 });
   }
 };
+
 serve(handleRequest, { port: 7777 });
