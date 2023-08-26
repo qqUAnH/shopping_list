@@ -12,7 +12,8 @@ configure({
 const handleRequest = async (request) => {
   const url = new URL(request.url);
   if (url.pathname === "/" && request.method === "GET") {
-    requestUtils.redirectTo("/lists")
+
+    return new Response("HI there");
   } else if (url.pathname === "/lists" && request.method === "POST") {
     return await listController.addList(request);
   } else if (url.pathname === "/lists" && request.method === "GET") {
